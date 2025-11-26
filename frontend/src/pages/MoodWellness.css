@@ -1,0 +1,60 @@
+.mood-wellness-container {
+    padding: 2rem;
+    background-color: #E0D9EB;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .mood-wellness-container h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #7C599D;
+  }
+  
+  .mood-input, .stress-level, .date-picker {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mood-input select, .stress-level input, .date-picker input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 2px solid #E5E7EB;
+  }
+  
+  .mood-input select {
+    font-size: 1rem;
+  }
+  
+  .stress-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .stress-level input {
+    width: 80%;
+  }
+  
+  .submit-button {
+    text-align: center;
+  }
+  
+  .submit-button button {
+    background-color: #7C599D;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button button:hover {
+    background-color: #6b4d7d;
+  }  

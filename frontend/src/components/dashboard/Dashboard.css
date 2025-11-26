@@ -1,0 +1,307 @@
+/* Card Header */
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--dark);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  /* Today's Schedule */
+  .schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .schedule-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .schedule-item:hover {
+    background: #e5e7eb;
+    transform: translateX(4px);
+  }
+  
+  .schedule-color {
+    width: 4px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  
+  .schedule-content {
+    flex: 1;
+  }
+  
+  .schedule-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .schedule-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0;
+  }
+  
+  .schedule-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--gray);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .schedule-time,
+  .schedule-location {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  
+  .schedule-description {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Empty State */
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .empty-icon {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+  
+  .empty-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-subtext {
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+  
+  /* Weekly Summary */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .stat-content {
+    flex: 1;
+  }
+  
+  .stat-label {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 0;
+  }
+  
+  .summary-footer {
+    padding-top: 1rem;
+    border-top: 2px solid var(--base);
+    text-align: center;
+  }
+  
+  .summary-text {
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  .text-warning {
+    color: var(--warning);
+    font-weight: 600;
+  }
+  
+  .text-success {
+    color: var(--success);
+    font-weight: 600;
+  }
+  
+  /* Burnout Indicator */
+  .burnout-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f0 100%);
+  }
+  
+  .burnout-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .burnout-badge {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid currentColor;
+  }
+  
+  .burnout-level {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .burnout-score {
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0 0;
+    opacity: 0.8;
+  }
+  
+  .burnout-message {
+    font-size: 1rem;
+    color: var(--gray);
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+  }
+  
+  .warnings-list {
+    background: white;
+    padding: 1.25rem;
+    border-radius: 8px;
+  }
+  
+  .warnings-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0 0 1rem 0;
+  }
+  
+  .warnings-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .warning-item {
+    padding: 0.75rem;
+    background: var(--base);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--dark);
+    border-left: 3px solid var(--primary);
+  }
+  
+  .burnout-stats {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .burnout-stat {
+    flex: 1;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .burnout-stat .stat-label {
+    font-size: 0.85rem;
+    color: var(--gray);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .burnout-stat .stat-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .schedule-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .schedule-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .burnout-badge {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .burnout-stats {
+      flex-direction: column;
+    }
+  }
