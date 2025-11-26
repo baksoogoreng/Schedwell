@@ -1,4 +1,5 @@
 ![assets/Intro.png](assets/intro schedwell.png)
+
 ## A Personal Solution for Balancing Tasks and Mental Health
 As a college student *juggling academics and organization responsibilities*, I often feel overwhelmed, and it affects my mental health. While tools like Google Calendar help us manage tasks, we often forget to track our mood.
 
