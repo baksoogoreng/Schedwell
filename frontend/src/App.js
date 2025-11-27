@@ -6,6 +6,9 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import MoodWellness from './pages/MoodWellness';
+import ScheduleManager from './pages/ScheduleManager';
+import Insight from './pages/Insights';
+
 import './App.css';
 
 // Protected Route Component
@@ -86,8 +89,25 @@ function AppRoutes() {
                   <MoodWellness />
                 </ProtectedRoute>
               }
-            />
+      />
 
+      <Route
+        path="/schedule"
+        element={
+          <ProtectedRoute>
+            <ScheduleManager />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+              path="/insights"
+              element={
+                <ProtectedRoute>
+                  <Insight />
+                </ProtectedRoute>
+              }
+      />
       {/* Redirect root to dashboard */}
       <Route path="/" element={<Navigate to="/dashboard" />} />
 

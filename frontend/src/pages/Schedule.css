@@ -1,0 +1,119 @@
+/* Container for the whole schedule page */
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Title and header for the schedule page */
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .schedule-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark);
+  }
+  
+  .schedule-header button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .schedule-header button:hover {
+    background-color: #7b4bcc;
+  }
+  
+  /* Schedule form container */
+  .schedule-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .schedule-form input,
+  .schedule-form select,
+  .schedule-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .schedule-form button {
+    background-color: #4f1d96; /* Purple button */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .schedule-form button:hover {
+    background-color: #7b4bcc;
+  }
+  
+  .schedule-form label {
+    font-weight: bold;
+  }
+  
+  /* Schedule card for each entry */
+  .schedule-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .schedule-card p {
+    margin: 0.5rem 0;
+    color: var(--gray);
+  }
+  
+  .schedule-card button {
+    padding: 0.5rem 1rem;
+    background-color: #4f1d96;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .schedule-card button:hover {
+    background-color: #7b4bcc;
+  }
+  
+  /* Make it responsive */
+  @media (max-width: 768px) {
+    .schedule-form input,
+    .schedule-form select,
+    .schedule-form button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    .schedule-header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .schedule-card {
+      padding: 0.75rem;
+    }
+  }  
